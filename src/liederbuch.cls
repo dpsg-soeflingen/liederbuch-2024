@@ -29,6 +29,7 @@
 }
 \newenvironment{song}[2]{
     \SongTitle{#1}{#2}
+    \addcontentsline{toc}{subsection}{#1 (#2)}
 }{\newpage}
 
 % The chorus-environment indents the chorus.
