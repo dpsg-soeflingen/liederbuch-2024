@@ -1,71 +1,13 @@
-\documentclass[11 pt, a5paper]{article}
-
-\usepackage[left=1cm,right=1cm,top=2cm,bottom=2cm]{geometry}
-\usepackage{calc}
-
-% Use sans-serif font.
-\renewcommand{\familydefault}{\sfdefault}
-
-% General Chord Definition.
-\newcommand{\Ch}[2]{%
-    \makebox[0pt][c]{\hspace{\widthof{#2}}\raisebox{0.9em}[1.7em]{\textbf{#1}}}%
-    #2%
-}
-% For brevity of notation, all chords as simple commands.
-\newcommand{\Am}[1]{\Ch{Am}{#1}}
-\newcommand{\E}[1]{\Ch{E}{#1}}
-
-% The song-environment.
-\newcommand{\SongTitle}[2]{
-    {\centering\mbox{\textbf{\large#1}}\par}
-    {\centering\mbox{#2}\par}
-    \bigskip
-}
-\newenvironment{song}[2]{
-    \SongTitle{#1}{#2}
-}{\newpage}
-
-% The chorus-environment indents the chorus.
-\newenvironment{chorus}[0]{
-    \bigskip
-    \list{}{
-        \itemindent\parindent
-        \leftmargin 3em
-    }
-    \item\relax
-    \textbf{Refrain: } \\
-}{
-    \endlist
-    \bigskip
-}
-
-\setlength\parindent{0pt}
+\documentclass{liederbuch}
 
 \begin{document}
 
-% Each song is in its own environment.
-% I would suggest to separate songs into their own .tex-files
-% and include them into the entire book-tex-file.
-\begin{song}{Hello there}{Obi-Wan Kenobi and Friends}
-    % Each chord is centered over the given text-snippet.
-    Das ist ein \Am{toller} Songtext. \\
-    Und noch eine super \Am{Zeile}! \\
-    Und jetzt eine richtig lange Zeile um zu schauen wie das aussieht! \\
-    Uuuuhhhh!! Schick!
-    %
-    \begin{chorus}
-    Es tut mir leid Pocahontas! \\
-    Ich hoffe du weisst das! \\
-    Tut mir so \E{leid} Pocahontas! \\
-    POCAHONTAS!
-    \end{chorus}
-    %
-    Hello there.
-\end{song}
+    \include{title_page.tex}
+    \tableofcontents
 
-\begin{song}{Deine Schuld}{Die Aerzte}
-    Hast du dich heute schon geaegert? War es heute wieder schlimm? \\
-    Hast du dich wieder gefragt warum kein Mensch was unternimmt? \\
-\end{song}
+    \include{lieder/country_roads}
+    \include{lieder/deine_schuld}
+    \include{lieder/hello_there}
+    \include{lieder/westerland}
 
 \end{document}
