@@ -7,6 +7,8 @@
 \RequirePackage{guitar}
 \renewcommand\guitarPreAccord{\footnotesize\strut\bfseries}  % Enable bold chord labels.
 
+\RequirePackage{graphicx}
+
 % Use sans-serif font.
 \renewcommand{\familydefault}{\sfdefault}
 
