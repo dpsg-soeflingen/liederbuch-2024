@@ -5,9 +5,14 @@
     \include{title_page.tex}
     \tableofcontents
 
-    \include{lieder/country_roads}
-    \include{lieder/deine_schuld}
-    \include{lieder/hello_there}
-    \include{lieder/westerland}
+    % Include all `*.tex` files in `./lieder`.
+    \newread\songs
+    \openin\songs=../tmp/songs.txt
+    \read\songs to \currentSong
+    \loop\unless\ifeof\songs
+    \input{lieder/\currentSong}
+    \read\songs to \currentSong
+    \repeat
+    \closein\songs
 
 \end{document}
