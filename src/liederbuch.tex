@@ -7,7 +7,7 @@
 
     % Include all `*.tex` files in `./lieder`.
     \newread\songs
-    \openin\songs=../tmp/songs.txt
+    \openin\songs=../tmp/lieder.txt
     \read\songs to \currentSong
     \loop\unless\ifeof\songs
     \input{lieder/\currentSong}
