@@ -51,7 +51,7 @@
         \leftmargin 3em
     }
     \item\relax
-    \textbf{Bridge } \\
+    \textbf{Bridge: } \\
 }{
     \endlist
     \bigskip
