@@ -40,5 +40,19 @@
     \bigskip
 }
 
+% The bridge-environment indents the bridge. (100% analogous to `\chorus` command)
+\newenvironment{bridge}[0]{
+    \bigskip
+    \list{}{
+        \itemindent\parindent
+        \leftmargin 3em
+    }
+    \item\relax
+    \textbf{Bridge } \\
+}{
+    \endlist
+    \bigskip
+}
+
 % Set default indendation to 0.
 \setlength\parindent{0pt}
