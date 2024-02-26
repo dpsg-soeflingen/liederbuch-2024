@@ -4,6 +4,9 @@
 \RequirePackage[left=1cm, right=1cm, top=2cm, bottom=2cm]{geometry}
 \RequirePackage{calc}
 
+\RequirePackage{guitar}
+\renewcommand\guitarPreAccord{\footnotesize\strut\bfseries}  % Enable bold chord labels.
+
 % Use sans-serif font.
 \renewcommand{\familydefault}{\sfdefault}
 
