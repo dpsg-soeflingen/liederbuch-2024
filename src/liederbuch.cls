@@ -1,7 +1,7 @@
 \ProvidesClass{liederbuch}
 \LoadClass[10pt, a5paper]{article} 
 
-\RequirePackage[left=1cm, right=1cm, top=2cm, bottom=2cm]{geometry}
+\RequirePackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
 \RequirePackage{calc}
 \RequirePackage{xifthen}
 
