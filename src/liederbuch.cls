@@ -84,3 +84,6 @@
 
 % Set default indendation to 0.
 \setlength\parindent{0pt}
+
+% Remove page numbers.
+\pagenumbering{gobble}
