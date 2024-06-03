@@ -82,6 +82,22 @@
     \end{guitarMagic}
 }
 
+% The interlude-environment indents the interlude. (100% analogous to `\chorus` command)
+\newenvironment{interlude}[0]{
+    \begin{guitarMagic}
+        \medskip
+        \list{}{
+            \itemindent\parindent
+            \leftmargin 1em
+        }
+        \item\relax
+        \textbf{Interlude: } \\
+}{
+        \endlist
+        \medskip
+    \end{guitarMagic}
+}
+
 % Set default indendation to 0.
 \setlength\parindent{0pt}
 
