@@ -98,7 +98,7 @@
 % Environment `intro`:
 \newenvironment{intro}[0]{
     \begin{guitarMagic}
-        \textbf{Intro: }
+        \textbf{Intro: } \\
 }{
     \end{guitarMagic}
 }
