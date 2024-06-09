@@ -95,6 +95,14 @@
     \end{guitarMagic}
 }
 
+% Environment `intro`:
+\newenvironment{intro}[0]{
+    \begin{guitarMagic}
+        \textbf{Intro: }
+}{
+    \end{guitarMagic}
+}
+
 % Command Definitions
 % ═════════════════════════════════════════════════════════════════════════════
 
