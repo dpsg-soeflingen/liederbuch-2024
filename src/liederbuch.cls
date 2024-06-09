@@ -103,6 +103,14 @@
     \end{guitarMagic}
 }
 
+% Environment `outro`:
+\newenvironment{outro}[0]{
+    \begin{guitarMagic}
+        \textbf{Outro:  } \\
+}{
+    \end{guitarMagic}
+}
+
 % Command Definitions
 % ═════════════════════════════════════════════════════════════════════════════
 
