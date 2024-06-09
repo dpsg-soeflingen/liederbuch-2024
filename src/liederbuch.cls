@@ -4,6 +4,7 @@
 \RequirePackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
 \RequirePackage{calc}
 \RequirePackage{xifthen}
+\RequirePackage{xcolor}
 
 \RequirePackage{guitar}
 \renewcommand\guitarPreAccord{\footnotesize\strut\bfseries}  % Enable bold chord labels.
