@@ -103,6 +103,14 @@
     \end{guitarMagic}
 }
 
+% Environment `instrumental`:
+\newenvironment{instrumental}[0]{
+    \begin{guitarMagic}
+        \textbf{Instrumental: } \\
+}{
+    \end{guitarMagic}
+}
+
 % Environment `outro`:
 \newenvironment{outro}[0]{
     \begin{guitarMagic}
